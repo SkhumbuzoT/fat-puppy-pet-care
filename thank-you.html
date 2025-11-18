@@ -18,7 +18,7 @@
 
 <body class="bg-gray-50">
 
-    <!-- Navigation (copied exactly from your site) -->
+   <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -28,6 +28,38 @@
                         <span class="text-2xl font-bold text-gray-800">Pet Care</span>
                     </a>
                 </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="index.html#services" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="index.html#about" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="index.html#testimonials" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="gallery.html" class="nav-link active text-gray-900 px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="index.html#contact" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="index.html#contact" class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                        Book Now
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-50">Home</a>
+                <a href="index.html#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-50">Services</a>
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-50">About</a>
+                <a href="index.html#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-50">Testimonials</a>
+                <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-800 hover:bg-gray-50">Gallery</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-50">Contact</a>
+                <a href="index.html#contact" class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-orange-500 hover:bg-orange-600">Book Now</a>
             </div>
         </div>
     </nav>
@@ -54,24 +86,58 @@
         </div>
     </section>
 
-    <!-- Footer (copied exactly from your site) -->
-    <footer class="bg-gray-800 text-white py-12 mt-20">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex md:justify-between md:items-center">
                 <div class="mb-8 md:mb-0">
-                    <a href="index.html" class="flex items-center">
+                    <a href="#" class="flex items-center">
                         <span class="text-2xl font-bold text-orange-500">🐾 FatPuppy</span>
                         <span class="text-2xl font-bold text-white">Pet Care</span>
                     </a>
-                    <p class="mt-4 text-gray-400 max-w-md">
-                        Trusted pet sitting services in Randburg, Johannesburg. 
-                        Your pets stay happy, safe, and loved while you're away.
-                    </p>
+                    <p class="mt-4 text-gray-400 max-w-md">Trusted pet sitting services in Randburg, Johannesburg. Your pets stay happy, safe, and loved while you're away.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Daily Visits</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Stay-In Pet Sitting</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Specialized Care</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Emergency Care</a></li>
+                            <li><a href="terms.html" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">Randburg, Johannesburg</li>
+                            <li class="text-gray-400">(084) 578-7503</li>
+                            <li class="text-gray-400">fatpuppycare@gmail.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">© 2023 FatPuppy Pet Care. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
